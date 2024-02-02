@@ -9,22 +9,21 @@ The package `huni_utils` is my first python package, and it's a collection of py
 I hope this code might helpful for others too, and always welcome for advice or suggesion.
 
 ## Installation
-You can install the `huni_utils` from [PyPI]()
+The `huni_utils` is managed in PyPI
 ```
-pip install huni_utils
+pip install huni-utils
 ```
 
 ## Function
 ### 1. load and save files
-- read_json
-- read_config
 - read_pkl
 - save_pkl
+- read_yaml
 - pandize_folder
 ### 2. handle os
-- clear directory
-- timeit (wrapper)
-- check structure of prerequisite directory
 - pjoin
-### 3. logger
-- default logger
+- validate structure of project directory
+- clear directory
+
+## Suggestion
+- any functions are needed, leave issues behind

@@ -14,14 +14,14 @@ def read_pkl(pickle_file_path: str):
 def save_pkl(file_dir: str, py_file) -> bool:
     r"""save pickle file"""
     if '.pkl' != file_dir[-4:]:
-        warnings.warn('You might not write file extension, although python inserted it as ".pkl" automatically')
+        warnings.warn(f'huni-utils automatically add file extension as ".pkl" ')
         file_dir = file_dir + '.pkl'
 
     with open(file_dir, 'wb') as handle:
         pickle.dump(py_file, handle, protocol=pickle.HIGHEST_PROTOCOL)
     return True
 
-def read_config(yaml_dir: str) -> dict:
+def read_yaml(yaml_dir: str) -> dict:
     r"""read yaml file"""
     _, file_extension = os.path.splitext(yaml_dir)
     assert file_extension == '.yaml', 'only yaml file is allowed'
@@ -34,7 +34,7 @@ def pandize_folder(folder_dir: str,
     r"""
     convert all data to pickle at once
 
-    Purpose
+    Motivation
     -------
     once you get raw data as csv, tsv, sort of.. to enhance read speed and presever data is necessary
     
