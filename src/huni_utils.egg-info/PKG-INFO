@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: huni-utils
+Version: 0.1.0
+Summary: frequently used utilities
+Author-email: JeeHun Sung <jhun1023@naver.com>
+License: MIT License
+        
+        Copyright (c) [2024] [JeeHun Sung]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/huni1023/huni-utils
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYaml
+Requires-Dist: pandas
+
+# Python Package for Utility
+@created by [huni1023](https://github.com/huni1023)
+
+## Motivation
+I've been managed various data like questionnaire, quiz response, system logs, etc.
+Thery are sometimes well-organized but in many times, it is unstructured and unshaped.
+Through out my experience, I've been established my data-handling-routines.
+The package `huni_utils` is my first python package, and it's a collection of python uility that I used frequently.
+I hope this code might helpful for others too, and always welcome for advice or suggesion.
+
+## Installation
+You can install the `huni_utils` from [PyPI]()
+```
+pip install huni_utils
+```
+
+## Function
+### 1. load and save files
+- read_json
+- read_config
+- read_pkl
+- save_pkl
+- pandize_folder
+### 2. handle os
+- clear directory
+- timeit (wrapper)
+- check structure of prerequisite directory
+- pjoin
+### 3. logger
+- default logger

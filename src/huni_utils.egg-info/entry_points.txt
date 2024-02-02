@@ -1,0 +1,2 @@
+[console_scripts]
+huni_utils = huniutils.__main__:main
