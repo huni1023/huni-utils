@@ -9,7 +9,7 @@ The package `huni_utils` is my first python package, and it's a collection of py
 I hope this code might helpful for others too, and always welcome for advice or suggesion.
 
 ## Installation
-The `huni_utils` is managed in PyPI
+The `huni_utils` is managed in [PyPI](https://pypi.org/project/huni-utils/)
 ```
 pip install huni-utils
 ```
