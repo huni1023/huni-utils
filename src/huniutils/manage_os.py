@@ -84,6 +84,44 @@ def clear_folder(folder_dir: str, extension: str, **kwargs):
     [os.remove(os.path.join(folder_dir, fle)) for fle in fle_ls]
     return True
 
+def split_task(task_ls: list,
+                n_worker = 8) -> list:
+    r"""
+    split function as chunk
+
+    Motivation
+    ----------
+    when multiprocessing python task,
+    due to limit of cpu count, not all tasks cannot be inserted at once
+    so, spliting task as chunk can change 
+    """
+    sliced_task = [task_ls[i:i+n_worker] for i in range(0, len(task_ls), n_worker)]
+    return sliced_task
+
+def search_file(main_dir: str,
+                extension: str
+                ) -> list:
+    r"""
+    search specific files in hierarchical directory
+
+    Parameters
+    ----------
+    main_dir: str
+        directory where to search
+    extension: str
+        extension of target files
+    """
+    if os.path.isfile(main_dir):
+        raise OSError('invalid input, input directory not a file')
+    
+    matched_fle_ls = list()
+    for root, dirs, files in os.walk(main_dir):
+        for f in files:
+            if f.endswith(extension):
+                fullpath = os.path.join(root, f)
+                matched_fle_ls.append(fullpath)
+    return matched_fle_ls
+
 
 if __name__ == '__main__':
     print(pjoin(os.getcwd(), 'sample'))
