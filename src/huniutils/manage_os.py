@@ -67,8 +67,7 @@ def clear_folder(folder_dir: str, extension: str, **kwargs):
     fle_ls = list()
     if os.path.isdir(folder_dir):
         for fle in os.listdir(folder_dir):
-            _, file_extension = os.path.splitext(fle)
-            if extension in file_extension:
+            if fle.endswith(extension):
                 fle_ls.append(fle)
 
     if 'starts_with' in kwargs.keys():
