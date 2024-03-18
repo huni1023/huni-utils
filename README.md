@@ -24,6 +24,8 @@ pip install huni-utils
 - pjoin
 - validate structure of project directory
 - clear directory
+- split_task
+- search_file
 
 ## Suggestion
 - any functions are needed, leave issues behind
