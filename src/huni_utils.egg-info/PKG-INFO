@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: huni-utils
-Version: 0.1.0
+Version: 0.1.1
 Summary: frequently used utilities
 Author-email: JeeHun Sung <jhun1023@naver.com>
 License: MIT License
@@ -42,22 +42,26 @@ The package `huni_utils` is my first python package, and it's a collection of py
 I hope this code might helpful for others too, and always welcome for advice or suggesion.
 
 ## Installation
-You can install the `huni_utils` from [PyPI]()
+The `huni_utils` is managed in [PyPI](https://pypi.org/project/huni-utils/)
 ```
-pip install huni_utils
+pip install huni-utils
 ```
 
 ## Function
 ### 1. load and save files
-- read_json
-- read_config
 - read_pkl
 - save_pkl
+- read_yaml
 - pandize_folder
 ### 2. handle os
-- clear directory
-- timeit (wrapper)
-- check structure of prerequisite directory
 - pjoin
-### 3. logger
-- default logger
+- validate structure of project directory
+- clear directory
+- split_task
+- search_file
+### 3. logging
+- generate plain log configuration
+- generate class-based log configuration
+
+## Suggestion
+- any functions are needed, leave issues behind or [e-mail me](mailto:jhun1023@naver.com)

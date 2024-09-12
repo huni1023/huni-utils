@@ -26,6 +26,9 @@ pip install huni-utils
 - clear directory
 - split_task
 - search_file
+### 3. logging
+- generate plain log configuration
+- generate class-based log configuration
 
 ## Suggestion
-- any functions are needed, leave issues behind
+- any functions are needed, leave issues behind or [e-mail me](mailto:jhun1023@naver.com)

@@ -8,5 +8,6 @@ src/huni_utils.egg-info/entry_points.txt
 src/huni_utils.egg-info/requires.txt
 src/huni_utils.egg-info/top_level.txt
 src/huniutils/__main__.py
+src/huniutils/logging.py
 src/huniutils/manage_os.py
 src/huniutils/read_save.py
