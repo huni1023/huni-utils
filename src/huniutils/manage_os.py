@@ -19,9 +19,10 @@ def pjoin(*args) -> str:
         combined_path = os.path.join(combined_path, p)
     return combined_path
 
-def check_prerequisite_dir(upper_dir: str,
-                           folder_name_ls: list,
-                           ):
+def check_prerequisite_dir(
+        upper_dir: str,
+        folder_name_ls: list,
+    ) -> bool:
     r"""
     check validity of folder existance under target directory
     
@@ -84,8 +85,10 @@ def clear_folder(folder_dir: str, extension: str, **kwargs):
     [os.remove(os.path.join(folder_dir, fle)) for fle in fle_ls]
     return True
 
-def split_task(task_ls: list,
-                n_worker = 8) -> list:
+def split_task(
+        task_ls: list,
+        n_worker = 8
+    ) -> list:
     r"""
     split function as chunk
 
@@ -98,9 +101,10 @@ def split_task(task_ls: list,
     sliced_task = [task_ls[i:i+n_worker] for i in range(0, len(task_ls), n_worker)]
     return sliced_task
 
-def search_file(main_dir: str,
-                extension: str
-                ) -> list:
+def search_file(
+        main_dir: str,
+        extension: str
+    ) -> list:
     r"""
     search specific files in hierarchical directory
 
@@ -109,7 +113,7 @@ def search_file(main_dir: str,
     main_dir: str
         directory where to search
     extension: str
-        extension of target files
+        extension of target files with dot or not
     """
     if os.path.isfile(main_dir):
         raise OSError('invalid input, input directory not a file')
