@@ -42,8 +42,8 @@ The package `huni_utils` is my first python package, and it's a collection of py
 I hope this code might helpful for others too, and always welcome for advice or suggesion.
 
 ## Installation
-The `huni_utils` is managed in [PyPI](https://pypi.org/project/huni-utils/)
-```
+The `huni_utils` is released in [PyPI](https://pypi.org/project/huni-utils/)
+```bash
 pip install huni-utils
 ```
 
