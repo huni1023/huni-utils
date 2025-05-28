@@ -21,7 +21,6 @@ pip install huni-utils
 - read_yaml
 - pandize_folder
 ### 2. handle os
-- pjoin
 - validate structure of project directory
 - clear directory
 - split_task
@@ -31,10 +30,6 @@ pip install huni-utils
     - calculate item difficulty and discrimination
     - visualize item parameter (in developing)
 - irt (in developing)
-
-### 4. logging
-- generate plain log configuration
-- generate class-based log configuration
 
 ## Suggestion
 - any functions are needed, leave issues behind or [e-mail me](mailto:jhun1023@naver.com)
