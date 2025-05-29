@@ -84,7 +84,7 @@ ipython_config.py
 Pipfile.lock
 
 # poetry
-poetry.lock
+# poetry.lock
 
 # PEP 582; used by python-next
 __pypackages__/

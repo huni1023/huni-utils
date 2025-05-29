@@ -1,0 +1,14 @@
+include README.md
+include LICENSE
+include pyproject.toml
+recursive-include huniutils *.py
+
+# Exclude development and lock files
+exclude poetry.lock
+exclude *.py[cod]
+exclude __pycache__/
+
+# Exclude test files and related folders
+prune tests
+prune .github
+prune .vscode
