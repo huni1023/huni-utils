@@ -74,3 +74,6 @@ push = true
     "{pep440_version}",
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
